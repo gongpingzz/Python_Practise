@@ -1,24 +1,13 @@
 #coding:utf-8
+"""
+本文件用于从海量日志中提取关键日志 eg: 从dest.log 文件中提取 error warning 相关的日志
+python log_collection.py -f dest.log -l "error&warning"
+"""
 
 import os
 import sys
 import re
 import argparse
-
-
-substr1 = "now state name"
-substr2 = "packet num"
-substr3 = "############# session"
-substr4 = "#############"
-substr5 = "UtsCallBackFunc"
-substr6 = "recv numeric data"
-substr7 = "recv field data"
-substr8 = "Zealot-debug:"
-substr9 = "func=Chunk"
-substr10 = "filerestore"
-substr11 = "func=AddDataToStreamingCache"
-
-#f2 = open('state_log.txt', 'w')
 
 
 def argvparse():
