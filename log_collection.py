@@ -19,7 +19,7 @@ def argvparse():
     return args
 
 
-def state_goto():
+def get_log():
     """collect the goto state from zealotPcap run log"""
     flag = 0
     args = argvparse()
@@ -40,5 +40,5 @@ if __name__ == "__main__":
     if len(sys.argv) <= 2:
         print "Error parameter number, use --help for detail"
         exit()
-    state_goto()
+    get_log()
 
